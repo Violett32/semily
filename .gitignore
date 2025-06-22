@@ -1,0 +1,7 @@
+//base git ignore file for a Node.js project
+node_modules/
+npm-debug.log
+.DS_Store
+.env
+dist/
+
