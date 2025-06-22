@@ -22,7 +22,7 @@
       }
       const reviews = await response.json();
       const reviewContainer = document.getElementById('review-container');
-      reviewContainer.innerHTML = ''; // Очистка контейнера перед добавлением новых отзывов
+      // reviewContainer.innerHTML = ''; // Очистка контейнера перед добавлением новых отзывов
       reviews.forEach(review => {
           const reviewItem = document.createElement('div');
           reviewItem.className = 'review-item';
@@ -464,8 +464,5 @@
         </nav>
     </div>
 </footer>
-<script>
-  loadReviews();
-</script>
 </body>
 </html>
