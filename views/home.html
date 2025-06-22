@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/"><img src="/images/logo.svg" alt="Logo" /></a>
+      <nav>
+        <a href="/about"> О нас </a>
+        <div class="dropdown">
+          <button class="dropdown-toggle">
+            Каталог
+            <svg
+              width="15"
+              height="10"
+              viewBox="0 0 15 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.5 9.2749L0 1.7749L1.05 0.724903L7.5 7.1749L13.95 0.724903L15 1.7749L7.5 9.2749Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/catalog">Все товары</a></li>
+            <li><a href="/catalog">Средства для лица</a></li>
+            <li><a href="/catalog">Средства для волос</a></li>
+            <li><a href="/catalog">Средства для тела</a></li>
+            <li><a href="/catalog">Массажные масла</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-toggle">
+            Чек-листы
+            <svg
+              width="15"
+              height="10"
+              viewBox="0 0 15 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.5 9.2749L0 1.7749L1.05 0.724903L7.5 7.1749L13.95 0.724903L15 1.7749L7.5 9.2749Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/check-lists">Тело</a></li>
+            <li><a href="/check-lists">Лицо</a></li>
+            <li><a href="/check-lists">Волосы</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <button>
+          <a href="/liked">
+            <svg
+              width="24"
+              height="23"
+              viewBox="0 0 24 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.99902 1.03027C7.29131 0.891808 8.59053 1.23415 9.66992 2L9.88281 2.1582L11.3838 3.33398L12 3.81738L12.6172 3.33398L14.1182 2.1582C15.237 1.28191 16.623 0.882633 18.001 1.03027C19.2936 1.16889 20.5043 1.78084 21.417 2.76465L21.5947 2.96582C22.4677 3.99975 22.966 5.32749 22.998 6.71289V6.99121C22.9674 8.3831 22.4673 9.70892 21.5996 10.7393L21.4219 10.9414L12 21.1191L2.5791 10.9414C1.66252 9.95131 1.10635 8.65013 1.01367 7.26758L1.00195 6.99023C0.971444 5.59794 1.41255 4.24787 2.23535 3.17578L2.40527 2.96582C3.27751 1.93282 4.46132 1.26552 5.74219 1.06445L5.99902 1.03027Z"
+                stroke="#2f2f2f"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </button>
+        <button><a href="#login-modal" class="open-modal-link">
+        <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+              fill="#2f2f2f"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 15C14.2091 15 16 13.2091 16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15ZM12 16C14.7614 16 17 13.7614 17 11C17 8.23858 14.7614 6 12 6C9.23858 6 7 8.23858 7 11C7 13.7614 9.23858 16 12 16Z"
+              fill="#2f2f2f"
+            />
+            <path
+              d="M20.013 20.2227C19.0791 18.5964 17.8651 17.277 16.4685 16.3701C15.0718 15.4632 13.5312 14.994 11.97 15.0001C10.4089 15.0061 8.87046 15.4873 7.47801 16.4051C6.08556 17.3228 4.87774 18.6517 3.95126 20.2852L4.76962 21.0696C5.6019 19.6022 6.68691 18.4084 7.93779 17.584C9.18866 16.7595 10.5706 16.3273 11.9731 16.3218C13.3755 16.3164 14.7595 16.7379 16.0141 17.5525C17.2688 18.3672 18.3593 19.5525 19.1983 21.0134L20.013 20.2227Z"
+              fill="#2f2f2f"
+            />
+          </svg>
+        </a>
+        </button>
+
+      
+     <div id="login-modal" class="modal">
+        <div class="modal-panel">
+          <a href="#" class="close-modal"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.70707 0.292875C1.31657 -0.097625 0.683375 -0.097625 0.292875 0.292875C-0.097625 0.683375 -0.097625 1.31657 0.292875 1.70707L1.70707 0.292875ZM20.0919 21.5061C20.4824 21.8966 21.1156 21.8966 21.5061 21.5061C21.8966 21.1156 21.8966 20.4824 21.5061 20.0919L20.0919 21.5061ZM0.292875 20.0919C-0.097625 20.4824 -0.097625 21.1156 0.292875 21.5061C0.683375 21.8966 1.31657 21.8966 1.70707 21.5061L0.292875 20.0919ZM21.5061 1.70707C21.8966 1.31657 21.8966 0.683375 21.5061 0.292875C21.1156 -0.097625 20.4824 -0.097625 20.0919 0.292875L21.5061 1.70707ZM0.292875 1.70707L20.0919 21.5061L21.5061 20.0919L1.70707 0.292875L0.292875 1.70707ZM1.70707 21.5061L21.5061 1.70707L20.0919 0.292875L0.292875 20.0919L1.70707 21.5061Z" fill="#2F2F2F"/>
+          </svg>
+          </a>
+          <form class="login-form">
+            <h1>Вход</h1>
+
+            <label for="login-email">Логин</label>
+            <input type="email" id="login-email" placeholder="Введите логин" />
+
+            <label for="login-pass">Пароль</label>
+            <input type="password" id="login-pass" placeholder="Введите пароль" />
+
+            <button type="submit" class="submit-btn"> <a href="/account">Войти</a></button>
+
+            <p class="register-link">
+              Нет аккаунта? <a href="#register-modal">Зарегистрируйтесь</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div id="register-modal" class="modal">
+  <div class="modal-panel">
+    <a href="#" class="close-modal"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.70707 0.292875C1.31657 -0.097625 0.683375 -0.097625 0.292875 0.292875C-0.097625 0.683375 -0.097625 1.31657 0.292875 1.70707L1.70707 0.292875ZM20.0919 21.5061C20.4824 21.8966 21.1156 21.8966 21.5061 21.5061C21.8966 21.1156 21.8966 20.4824 21.5061 20.0919L20.0919 21.5061ZM0.292875 20.0919C-0.097625 20.4824 -0.097625 21.1156 0.292875 21.5061C0.683375 21.8966 1.31657 21.8966 1.70707 21.5061L0.292875 20.0919ZM21.5061 1.70707C21.8966 1.31657 21.8966 0.683375 21.5061 0.292875C21.1156 -0.097625 20.4824 -0.097625 20.0919 0.292875L21.5061 1.70707ZM0.292875 1.70707L20.0919 21.5061L21.5061 20.0919L1.70707 0.292875L0.292875 1.70707ZM1.70707 21.5061L21.5061 1.70707L20.0919 0.292875L0.292875 20.0919L1.70707 21.5061Z" fill="#2F2F2F"/>
+          </svg></a>
+    <form class="login-form">
+      <h1>Регистрация</h1>
+
+      <label for="reg-email">E-mail</label>
+      <input id="reg-email" type="email" placeholder="Введите логин" />
+
+      <label for="reg-pass">Пароль</label>
+      <input id="reg-pass" type="password" placeholder="Введите пароль" />
+
+      <label for="reg-birthday">Дата рождения</label>
+      <input id="reg-birthday" type="text" placeholder="Введите дату рождения" />
+
+      <label for="reg-name">Какое имя отображать на сайте?</label>
+      <input id="reg-name" type="text" placeholder="Введите имя" />
+
+      <button type="submit" class="submit-btn"><a href="/account">Зарегистрироваться</a></button>
+    </form>
+  </div>
+</div>
+    </header>
+    <main>
+      <section class="main-pic">
+        <img src="/images/main-pic.jpg" alt="Main" style="width: 100vw" />
+        <h1>SEMILY — косметика с душой природы</h1>
+        <div class="notTested">
+          <img src="/images/notTested.png" alt="NotTested" />
+        </div>
+      </section>
+      <h2>Новинки</h2>
+      <section class="products">
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product1.jpg" alt="Product 1" />
+            </div>
+            <figcaption>Гель для бровей</figcaption>
+            <p>Fix gel</p>
+            <p>619 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product2.jpg" alt="Product 2" />
+            </div>
+            <figcaption>Шампунь для волос</figcaption>
+            <p>Hair reconstruktor shampoo</p>
+            <p>589 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product3.jpg" alt="Product 3" />
+            </div>
+            <figcaption>Маска для волос</figcaption>
+            <p>Hair reconstructor mask</p>
+            <p>619 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product4.jpg" alt="Product 4" />
+            </div>
+            <figcaption>Сыворотка антивозрастная</figcaption>
+            <p>Anti — age</p>
+            <p>529 ₽</p>
+          </div>
+        </a>
+      </section>
+
+      <h2>Хиты</h2>
+      <section class="products">
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product5.jpg" alt="Product 5" />
+            </div>
+            <figcaption>Сыворотка для лица против акне</figcaption>
+            <p>Anti — acne</p>
+            <p>549 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product6.jpg" alt="Product 6" />
+            </div>
+            <figcaption>Бальзам для волос</figcaption>
+            <p>Hair reconstruktor balsam</p>
+            <p>559 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product7.jpg" alt="Product 7" />
+            </div>
+            <figcaption>Крем для ног против натоптышей</figcaption>
+            <p>Foot cream</p>
+            <p>438 ₽</p>
+          </div>
+        </a>
+        <a href="/product">
+          <div class="product-card col">
+            <div class="img-border">
+              <img src="/images/product8.jpg" alt="Product 8" />
+            </div>
+            <figcaption>Массажное масло для тела</figcaption>
+            <p>Massage oil professional</p>
+            <p>569 ₽</p>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-nav">
+        <div class="contacts">
+          <img src="/images/logo.svg" alt="Logo" />
+          <p>
+            Связаться с нами <br />
+            +7 (771) 772-17-17
+          </p>
+          <div class="icons">
+            <a href="/telegram"
+              ><img src="/images/brand-instagram.svg" alt="instagram"
+            /></a>
+            <a href="/instagram"
+              ><img src="/images/brand-telegram.svg" alt="telegram"
+            /></a>
+          </div>
+        </div>
+        <nav>
+          <a href="/">Главная</a>
+          <a href="/about">О нас</a>
+          <div class="vertical-a">
+            <a href="/">Каталог</a>
+            <div class="dropdown">
+              <a href="/catalog">Все товары</a>
+              <a href="/catalog">Уход за волосами</a>
+              <a href="/catalog">Уход за телом</a>
+              <a href="/catalog">Уход за лицом</a>
+              <a href="/catalog">Массажные масла</a>
+            </div>
+          </div>
+          <div class="vertical-a">
+            <a href="/">Чек-листы</a>
+            <div class="dropdown">
+              <a href="/check-lists">Тело</a>
+              <a href="/check-lists">Лицо</a>
+              <a href="/check-lists">Волосы</a>
+            </div>
+          </div>
+          <div class="vertical-a">
+            <a href="/liked">Избранное</a>
+            <a href="/account">Личный кабинет</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

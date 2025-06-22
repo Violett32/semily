@@ -1,0 +1,7 @@
+<svg width="20" height="415" viewBox="0 0 20 415" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="10" cy="9.5" rx="10" ry="9.5" fill="#024B37" />
+    <ellipse cx="10" cy="125.5" rx="10" ry="9.5" fill="#024B37" />
+    <ellipse cx="10" cy="241.5" rx="10" ry="9.5" fill="#024B37" />
+    <ellipse cx="10" cy="405.5" rx="10" ry="9.5" fill="#024B37" />
+    <line x1="9.5" y1="408" x2="9.5" y2="9" stroke="#1E1E1E" />
+</svg>
