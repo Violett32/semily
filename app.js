@@ -48,7 +48,7 @@ app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'account.html'));
 });
 
-// API для получения отзывов
+
 app.post('/reviews', (req, res) => {
     const { name, rating, comment } = req.body;
     if (!name || !rating) {
@@ -71,6 +71,16 @@ app.post('/reviews', (req, res) => {
     );
 });
 
+
+app.get('/reviews', (req, res) => {
+    db.all('SELECT * FROM reviews ORDER BY created_at DESC', [], (err, rows) => {
+        if (err) {
+            console.error('Ошибка при получении отзывов:', err);
+            return res.status(500).json({ error: 'Database error' });
+        }
+        res.json(rows);
+    });
+});
 
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port}`);

@@ -13,8 +13,39 @@
     />
 
     <script>
-
-    </script>
+  <!-- Функция для загрузки отзывов при загрузке страницы -->
+  async function loadReviews() {
+    try {
+      const response = await fetch('/reviews');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const reviews = await response.json();
+      const reviewContainer = document.getElementById('review-container');
+      reviewContainer.innerHTML = ''; // Очистка контейнера перед добавлением новых отзывов
+      reviews.forEach(review => {
+          const reviewItem = document.createElement('div');
+          reviewItem.className = 'review-item';
+          reviewItem.innerHTML = `
+        <div>
+        <div class="review-item-stars">
+          ${'<img src="/images/filled-star.svg" alt="Star"/>'.repeat(review.rating)}
+          ${'<img src="/images/unfilled-star.svg" alt="Star"/>'.repeat(5 - review.rating)}
+        </div>
+        </div>
+        <div>
+          <p class="medium">${review.name}</p>
+          <p>${review.comment}</p>
+        </div>
+            `;
+          reviewContainer.appendChild(reviewItem);
+        }
+      )
+    } catch (error) {
+      console.error('Ошибка при загрузке отзывов:', error);
+    }
+  }
+</script>
 </head>
 <body>
 <header>
@@ -381,6 +412,7 @@
         }
 
       })
+      loadReviews();
     </script>
 </main>
 <footer>
@@ -432,5 +464,8 @@
         </nav>
     </div>
 </footer>
+<script>
+  loadReviews();
+</script>
 </body>
 </html>
