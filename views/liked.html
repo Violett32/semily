@@ -341,5 +341,24 @@
         </nav>
     </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const burger = document.getElementById('burger-btn');
+  const menu = document.getElementById('mobile-menu');
+  const close = document.getElementById('close-mobile-menu');
+  if (burger && menu && close) {
+    burger.addEventListener('click', function() {
+      menu.classList.add('active');
+    });
+    close.addEventListener('click', function() {
+      menu.classList.remove('active');
+    });
+    // Закрытие по клику вне меню
+    menu.addEventListener('click', function(e) {
+      if (e.target === menu) menu.classList.remove('active');
+    });
+  }
+});
+</script>
 </body>
 </html>
