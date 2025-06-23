@@ -1519,3 +1519,63 @@ form textarea {
     width: 100%;
   }
 }
+
+
+.hamburger, .mobile-menu-modal { display: none; }
+
+
+.mobile-menu-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.08);
+  z-index: 2000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mobile-menu-content {
+  background: #fffef9;
+  min-width: 70vw;
+  max-width: 90vw;
+  height: 100vh;
+  border-radius: 0 0 32px 0;
+  padding: 24px 24px 24px 24px;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-menu-content > div > span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 4px;
+  display: block;
+}
+.mobile-menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+.mobile-menu-content a {
+  color: #2f2f2f;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+}
+.close-mobile-menu {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #2f2f2f;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  .hamburger { display: flex; }
+  header nav { display: none; }
+  .mobile-menu-modal { display: none; }
+  .mobile-menu-modal.active { display: flex; }
+}
