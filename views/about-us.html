@@ -14,7 +14,41 @@
 </head>
 <body>
 <header>
+    <div class="hamburger">
+        <button id="burger-btn" aria-label="Открыть меню">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.375 9.5H16.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.375 4.75H16.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.375 14.25H16.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+    </div>
     <a href="/"><img src="/images/logo.svg" alt="Logo"/></a>
+     
+    <div id="mobile-menu" class="mobile-menu-modal">
+    <div class="mobile-menu-content">
+        <button id="close-mobile-menu" class="close-mobile-menu" aria-label="Закрыть меню">&times;</button>
+        <a href="/about">О нас</a>
+        <div>
+            <span>Каталог</span>
+            <ul>
+                <li><a href="/catalog">Все товары</a></li>
+                <li><a href="/catalog">Средства для лица</a></li>
+                <li><a href="/catalog">Средства для волос</a></li>
+                <li><a href="/catalog">Средства для тела</a></li>
+                <li><a href="/catalog">Массажные масла</a></li>
+            </ul>
+        </div>
+        <div>
+            <span>Чек-листы</span>
+            <ul>
+                <li><a href="/check-lists">Тело</a></li>
+                <li><a href="/check-lists">Лицо</a></li>
+                <li><a href="/check-lists">Волосы</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
     <nav>
         <a class="gray" href="/about"> О нас </a>
         <div class="dropdown">
