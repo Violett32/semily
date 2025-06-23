@@ -1573,7 +1573,7 @@ form textarea {
   cursor: pointer;
 }
 .hamburger { display: none; }
-.mobile-menu-modal { display: none !important; } /* Всегда скрыто */
+.mobile-menu-modal { display: none !important; } 
 
 @media screen and (max-width: 360px) {
   .hamburger { display: flex; }
