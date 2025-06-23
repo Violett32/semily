@@ -1572,10 +1572,12 @@ form textarea {
   margin-bottom: 16px;
   cursor: pointer;
 }
+.hamburger { display: none; }
+.mobile-menu-modal { display: none !important; } /* Всегда скрыто */
 
 @media screen and (max-width: 360px) {
   .hamburger { display: flex; }
   header nav { display: none; }
-  .mobile-menu-modal { display: none; }
-  .mobile-menu-modal.active { display: flex; }
+  .mobile-menu-modal { display: none !important; }
+  .mobile-menu-modal.active { display: flex !important; }
 }
