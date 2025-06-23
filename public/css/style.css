@@ -1573,7 +1573,17 @@ form textarea {
   cursor: pointer;
 }
 .hamburger { display: none; }
-.mobile-menu-modal { display: none !important; } 
+.mobile-menu-modal { display: none !important; }
+ 
+.mobile-menu-content a:active,
+.mobile-menu-content a:focus {
+  color: #25846a;
+}
+
+
+.mobile-menu-content a.active {
+  color: #25846a;
+}
 
 @media screen and (max-width: 360px) {
   .hamburger { display: flex; }
