@@ -498,7 +498,7 @@ main button {
 }
 .review {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 90px;
   padding: 0 100px 30px !important;
   align-items: center;
