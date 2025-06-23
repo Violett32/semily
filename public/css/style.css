@@ -668,6 +668,10 @@ main button {
   color: #2f2f2f;
 }
 
+.lf-btn {
+  display: none;
+}
+
 /* account */
 .account {
   display: flex;
@@ -946,7 +950,7 @@ main button {
     font-size: 12px;
   }
 
-  .catalog-products-left .product-card:first-child {
+  .catalog-products-left  > .product-card {
     display: none;
   }
 
@@ -1227,7 +1231,36 @@ main button {
   .rule-text p {
     padding-left: 28px;
   }
+
+  .account {
+    margin: 0;
+    padding: 0 15px;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .account > img {
+    max-width: 157px;
+    height: fit-content;
+  }
+
+  .account-text > button {
+    display: none;
+  }
+
+  .account-text > h2 {
+    color: #000;
+  }
+
+  .lf-btn {
+    display: block;
+    grid-column: span 2 / span 2;
+    width: 100%;
+  }
 }
+
+
 
 /* хлебные крошки */
 .breadcrumbs ul {
