@@ -567,6 +567,9 @@ main button {
   justify-content: center;
   align-items: center;
   max-width: none !important;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 /* check-lists */
