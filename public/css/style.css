@@ -532,7 +532,7 @@ main button {
 }
 .about-paragraph {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   margin: 30px 100px 160px !important;
   margin-left: 100px;
